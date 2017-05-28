@@ -3,8 +3,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!--Lightbox2 for slideshow-->
+  <link href="lightbox2-master/dist/css/lightbox.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
   <style>
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
@@ -55,15 +58,15 @@
   <div class="row">
     <div class="col-sm-4">
       <p>Ausstellungsansicht</p>
-      <a href="slideshow.html"><img src="images/Ausstellungsansicht1.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
+      <a href="images/Ausstellungsansicht1.jpg" data-lightbox="gallery" data-title="Ausstellungsansicht"><img src="images/Ausstellungsansicht1.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
     </div>
     <div class="col-sm-4"> 
       <p>Cool Rider</p>
-      <a href="slideshow.html"><img src="images/cool_rider.JPG" class="img-responsive" style="width:100%" alt="Image"></a>
+      <a href="images/cool_rider.jpg" data-lightbox="gallery"><img src="images/cool_rider.JPG" class="img-responsive" style="width:100%" alt="Image"></a>
     </div>
     <div class="col-sm-4">
       <p>Gefüllte Zwiebel</p>
-      <a href="slideshow.html"><img src="images/gefuellte_zwiebel.JPG" class="img-responsive" style="width:100%" alt="Image"></a>
+      <a href="images/gefuellte_zwiebel.jpg" data-lightbox="gallery"><img src="images/gefuellte_zwiebel.JPG" class="img-responsive" style="width:100%" alt="Image"></a>
     </div>
   </div>
 </div><br>
@@ -90,6 +93,14 @@
 <footer class="container-fluid text-center">
   <p>&copy; 2017 Katharina Kraus</p>
 </footer>
+<script src="lightbox2-master/dist/js/lightbox-plus-jquery.js"></script>
+  <script>
+    lightbox.option({
+      'resizeDuration': 600,
+      'wrapAround': true,
+	  'maxWidth':1200,
+    })
+</script>
 
 </body>
 </html>
